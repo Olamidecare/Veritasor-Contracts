@@ -3860,7 +3860,7 @@ mod cleanup_metrics_test;
 mod compact_archival_test;
 #[cfg(all(test, feature = "full-tests"))]
 mod dao_override_test;
-#[cfg(all(test, feature = "full-tests"))]
+#[cfg(test)]
 mod dispute_test;
 #[cfg(all(test, feature = "full-tests"))]
 mod dynamic_fees_test;

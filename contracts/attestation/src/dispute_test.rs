@@ -1224,8 +1224,8 @@ fn get_dispute_resolution_round_trips_stored_value() {
     );
     env.as_contract(&contract_id, || {
         super::dispute::store_dispute_resolution(&env, 7u64, &expected);
-        let stored =
-            super::dispute::get_dispute_resolution(&env, 7u64).expect("resolution should be stored");
+        let stored = super::dispute::get_dispute_resolution(&env, 7u64)
+            .expect("resolution should be stored");
         assert_eq!(stored, expected);
     });
 }
